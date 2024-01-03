@@ -48,8 +48,8 @@
         <div class="detail">
           <h3>Hi, I'm</h3>
           <h1><span style="color: #f9532d">Damilola</span>  Afolayan</h1>
-          <p class="testt">
-            I'm a professional Web developer. Our main goal to help & Satisfy
+          <p>
+            I'm a professional Web developer. My main goalis to help & Satisfy
             the Local & Global Clients by creating web development solutions
           </p >
           <div class="social">
@@ -75,20 +75,20 @@
     </section>
 
     <script>
-      const darkModeToggle = document.getElementById("darkModeToggle");
+      const darkModeToggle = document.getElementById('darkModeToggle');
       const body = document.body;
-      const isDarkMode = localStorage.getItem("darkMode") === "enabled";
+      const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
       if (isDarkMode) {
-        body.classList.add("dark-mode");
+        body.classList.add('dark-mode');
         darkModeToggle.checked = true;
       }
-      darkModeToggle.addEventListener("change", () => {
+      darkModeToggle.addEventListener('change', () => {
         if (darkModeToggle.checked) {
-          body.classList.add("dark-mode");
-          localStorage.setItem("darkMode", "enabled");
+          body.classList.add('dark-mode');
+          localStorage.setItem('darkMode', "enabled");
         } else {
-          body.classList.remove("dark-mode");
-          localStorage.setItem("darkMode", "disabled");
+          body.classList.remove('dark-mode');
+          localStorage.setItem('darkMode', 'disabled');
         }
       });
     </script>
